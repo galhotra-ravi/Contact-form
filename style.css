@@ -60,6 +60,7 @@ textarea{
     width: 87%;
     margin-top: 15px;
     outline: none;
+    resize: none;
 }
 
 #email{
