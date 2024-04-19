@@ -69,7 +69,7 @@ textarea{
 }
 
 button{
-    display: block;
+    /* display: block; */
     height: 40px;
     width: 100px;
     background-color: aquamarine;
@@ -83,4 +83,26 @@ button:hover{
     cursor: pointer;
     outline: 2px solid black;
     background-color: white;
+}
+
+.loader {
+    border: 5px solid #f3f3f3; /* Light grey */
+    border-top: 5px solid rgb(0, 0, 0); /* Blue */
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 2s linear infinite;
+    margin: auto;
+    margin-top: 10px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Styles to hide the loader when alert is shown */
+.hidden {
+    /* display:none; */
+    visibility: hidden;
 }
