@@ -18,8 +18,7 @@ form.addEventListener("submit", e => {
     button.innerText = "Sent ✅"
     
     setInterval(() => {
-      form.reset(); 
-      button.innerText = "Submit"
+      location.reload();
     }, 2000);
     // alert('Form Submitted Succesfully!')
   });
